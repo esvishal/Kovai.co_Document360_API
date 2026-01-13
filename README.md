@@ -2,7 +2,7 @@
 
 This project demonstrates how to interact with the Document360 API to perform CRUD (Create, Read, Update, Delete) operations on drive folders.
 
-## 📋 Task Overview
+## Task Overview
 
 This console application implements 4 main API operations:
 - **GET** - Fetch all drive folders
@@ -10,7 +10,7 @@ This console application implements 4 main API operations:
 - **PUT** - Update folder name
 - **DELETE** - Remove folder
 
-## 🛠️ Language and Tools Used
+##  Language and Tools Used
 
 - **Language**: Python 3.x
 - **Libraries**: 
@@ -18,7 +18,7 @@ This console application implements 4 main API operations:
   - `json` - For JSON data handling
   - `datetime` - For timestamps
 
-## 🚀 Setup and Installation
+##  Setup and Installation
 
 ### Prerequisites
 - Python 3.6 or higher
@@ -50,8 +50,7 @@ pip install requests
    USER_ID = "your_actual_user_id_here"      # Replace with your user ID
    ```
 
-## 📁 Project Structure
-
+##  Project Structure
 ```
 document360-api-crud/
 ├── document360_api.py      # Main application file
@@ -59,7 +58,7 @@ document360-api-crud/
 └── requirements.txt       # Python dependencies
 ```
 
-## 🏃‍♂️ How to Run
+##  How to Run
 
 1. **Run the main program**:
 ```bash
@@ -72,7 +71,7 @@ python document360_api.py
    - Rename the created folder (PUT)
    - Delete the folder (DELETE)
 
-## 📊 Expected Output
+##  Expected Output
 
 The program will display detailed logs for each operation:
 
@@ -109,35 +108,35 @@ Response Body: [
   }
 ]
 
-✅ SUCCESS: Found 1 folders
+ SUCCESS: Found 1 folders
 ```
 
 ## 🔧 Features Implemented
 
 ### Core Requirements
-- ✅ Console application in Python
-- ✅ Individual methods for each CRUD operation
-- ✅ Standard naming conventions
-- ✅ Proper request headers with api_token
-- ✅ Detailed logging of requests and responses
-- ✅ Dynamic folder ID storage and reuse
-- ✅ Modular and readable code with comments
+-  Console application in Python
+-  Individual methods for each CRUD operation
+-  Standard naming conventions
+-  Proper request headers with api_token
+-  Detailed logging of requests and responses
+-  Dynamic folder ID storage and reuse
+-  Modular and readable code with comments
 
 ### Bonus Features
-- ✅ Response validation
-- ✅ Comprehensive error handling
-- ✅ HTTP status code validation
-- ✅ JSON response structure validation
-- ✅ Request timeout handling
-- ✅ Detailed documentation
+-  Response validation
+-  Comprehensive error handling
+-  HTTP status code validation
+-  JSON response structure validation
+-  Request timeout handling
+-  Detailed documentation
 
-## 🔐 Security Notes
+##  Security Notes
 
 - Never commit your actual API key or user ID to version control
 - These credentials should be stored in environment variables in production
 - Current implementation is for demonstration purposes only
 
-## 📝 API Endpoints Used
+##  API Endpoints Used
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -146,14 +145,14 @@ Response Body: [
 | PUT    | `/v2/Drive/Folders/{id}` | Update folder name |
 | DELETE | `/v2/Drive/Folders/{id}` | Delete folder |
 
-## 🐛 Error Handling
+##  Error Handling
 
 The application handles various error scenarios:
 - Network connectivity issues
 - Invalid API tokens
 - Invalid folder IDs
 
-## 🎯 Key Implementation Details
+##  Key Implementation Details
 
 1. **Dynamic Folder ID Management**: The application stores the created folder ID and reuses it for update and delete operations.
 
@@ -163,14 +162,14 @@ The application handles various error scenarios:
 
 4. **Error Resilience**: Proper try-catch blocks and status code validation ensure the application handles errors gracefully.
 
-## 📈 Sample Test Flow
+##  Sample Test Flow
 
 1. **GET**: Retrieves existing folders to understand current state
 2. **POST**: Creates a new folder with timestamp-based name
 3. **PUT**: Updates the folder name by appending "Updated" prefix
 4. **DELETE**: Removes the created folder to clean ui
 
-## 🏆 Achievement Summary
+##  Achievement Summary
 
 This implementation successfully demonstrates:
 - REST API integration skills
