@@ -152,9 +152,6 @@ The application handles various error scenarios:
 - Network connectivity issues
 - Invalid API tokens
 - Invalid folder IDs
-- API rate limiting
-- Invalid JSON responses
-- HTTP timeout errors
 
 ## 🎯 Key Implementation Details
 
@@ -171,15 +168,7 @@ The application handles various error scenarios:
 1. **GET**: Retrieves existing folders to understand current state
 2. **POST**: Creates a new folder with timestamp-based name
 3. **PUT**: Updates the folder name by appending "Updated" prefix
-4. **DELETE**: Removes the created folder to clean up
-
-## 📞 Support
-
-If you encounter any issues:
-1. Check your API token is correct
-2. Verify your internet connection
-3. Ensure you have the required Python packages installed
-4. Check the Document360 API documentation for any updates
+4. **DELETE**: Removes the created folder to clean ui
 
 ## 🏆 Achievement Summary
 
@@ -190,6 +179,3 @@ This implementation successfully demonstrates:
 - Documentation skills
 - Understanding of HTTP methods and status codes
 
----
-
-*This project was created as part of a technical assessment for Document360 API integration.*
